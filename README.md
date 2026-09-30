@@ -43,6 +43,6 @@ The entire pipeline is contained within a Jupyter Notebook[cite: 3].
 
 ## Contributors
 
-*   **Mohamed** ([GitHub Profile Link])
-*   **Omar** ([GitHub Profile Link])
-*   **Aly** ([GitHub Profile Link]) 
+*   **Mohamed** ([[GitHub Profile Link](https://github.com/Mohammed-walid)])
+*   **Omar** ([[GitHub Profile Link](https://github.com/OmarSoudan)])
+*   **Aly** ([[GitHub Profile Link](https://github.com/ivartheboneless-99)]) 
