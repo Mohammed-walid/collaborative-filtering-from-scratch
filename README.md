@@ -1,45 +1,32 @@
-# Collaborative Filtering Engine (CF-Engine)
+# Movie Ratings Analysis
 
-This repository contains a collaborative filtering recommender system built entirely from scratch, developed for the Introduction to Machine Learning course at Alexandria University[cite: 1, 2]. 
+This project performs exploratory data analysis on a movie dataset using Python, Pandas, and Matplotlib. The executed code, visualizations, and tabular outputs are fully documented and available for review in the rendered notebook file, `ass1.html`.
 
-The engine predicts user ratings for movies by identifying patterns in a ratings matrix, implementing both user-based and item-based approaches[cite: 1]. To analyze how different distance metrics behave with rating scale offsets and matrix sparsity, the system evaluates recommendations using three distinct similarity calculations[cite: 1, 2].
+## Project Structure
 
-## Core Features
+* **`ass1.html`**: The rendered Jupyter Notebook containing the executed Python code and output tables.
+* **`data/ratings.csv`**: The raw dataset containing user ratings.
+* **`data/movies.csv`**: The dataset containing movie metadata.
 
-*   **Custom Similarity Metrics:** Implements Euclidean distance, Cosine similarity, and Pearson correlation from first principles without external machine learning libraries[cite: 1, 2, 3].
-*   **Sparsity Handling:** Calculates similarity strictly over co-rated items to prevent missing data from silently skewing predictions[cite: 2].
-*   **Dual-Direction Filtering:** 
-    *   *User-Based CF:* Predicts ratings via a similarity-weighted average of the k-nearest users[cite: 1, 2].
-    *   *Item-Based CF:* Predicts ratings via a similarity-weighted average of the k-nearest items[cite: 1, 3].
-*   **Quantitative Evaluation:** Features a custom train/test split mechanism that holds out 20% of each user's ratings to evaluate Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)[cite: 4].
+## Dataset Overview
 
-## Tech Stack
+The initial phase of the analysis (Part A, Task 1) focuses on loading and inspecting the ratings data. The `ratings.csv` file is parsed into a Pandas DataFrame and includes the following core features:
+* **`userId`**: Unique identifier for the user submitting the rating.
+* **`movieId`**: Unique identifier for the movie being rated.
+* **`rating`**: The numerical score given to the movie.
+* **`timestamp`**: The exact time the rating was recorded.
 
-*   **Language:** Python 3.9+[cite: 3]
-*   **Libraries:** `pandas` and `numpy`[cite: 3]
-*   *Note: Scikit-learn, Surprise, and other algorithmic recommender libraries are strictly excluded by design to focus on algorithm mechanics[cite: 3, 5].*
+## Technologies & Libraries
 
-## Dataset
+* **Python**
+* **Pandas**: Utilized for reading the CSV data and manipulating the resulting DataFrames.
+* **Matplotlib**: Imported (`matplotlib.pyplot`) for generating data visualizations.
 
-This project uses the standard **MovieLens latest-small** dataset, containing approximately 100,000 ratings from 600 users across 9,000 movies[cite: 3]. 
+## Setup & Execution
 
-**Data Setup:**
-1. Download the dataset from [GroupLens Research](https://files.grouplens.org/datasets/movielens/ml-latest-small.zip)[cite: 3].
-2. Extract the archive and place `ratings.csv` and `movies.csv` into a directory named `data/` at the root of this project[cite: 3].
-
-## Usage & Execution
-
-The entire pipeline is contained within a Jupyter Notebook[cite: 3]. 
-
-1. Ensure the `data/` folder is populated with the MovieLens `.csv` files[cite: 3].
-2. Run the notebook cells sequentially to load the matrix, handle missing values, and execute the grid search[cite: 3, 4].
-
-## Evaluation Results
-
-| Method | Similarity Metric | K-Neighbors | RMSE | MAE |
-| :--- | :--- | :--- | :--- | :--- |
-| User-Based | Pearson | 20 | TBD | TBD |
-| Item-Based | Cosine | 50 | TBD | TBD |
+1. Ensure Python 3 and the required libraries (`pandas`, `matplotlib`) are installed in your environment.
+2. Clone the repository and maintain the `data/` directory structure so the CSV files load correctly.
+3. Open the original Jupyter Notebook to run the analysis, or open **ass1.html** in any modern web browser to view the static, executed results.
 
 ## Contributors
 
