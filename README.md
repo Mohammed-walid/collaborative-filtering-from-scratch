@@ -1,10 +1,10 @@
 # Movie Ratings Analysis
 
-This project performs exploratory data analysis on a movie dataset using Python, Pandas, and Matplotlib. The executed code, visualizations, and tabular outputs are fully documented and available for review in the rendered notebook file, `ass1.html`.
+This project performs exploratory data analysis on a movie dataset using Python, Pandas, and Matplotlib. The executed code, visualizations, and tabular outputs are fully documented and available for review in the rendered notebook file, `HTML_code.html`.
 
 ## Project Structure
 
-* **`ass1.html`**: The rendered Jupyter Notebook containing the executed Python code and output tables.
+* **`HTML_code.html`**: The rendered Jupyter Notebook containing the executed Python code and output tables.
 * **`data/ratings.csv`**: The raw dataset containing user ratings.
 * **`data/movies.csv`**: The dataset containing movie metadata.
 
