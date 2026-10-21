@@ -26,7 +26,7 @@ The initial phase of the analysis (Part A, Task 1) focuses on loading and inspec
 
 1. Ensure Python 3 and the required libraries (`pandas`, `matplotlib`) are installed in your environment.
 2. Clone the repository and maintain the `data/` directory structure so the CSV files load correctly.
-3. Open the original Jupyter Notebook to run the analysis, or open **ass1.html** in any modern web browser to view the static, executed results.
+3. Open the original Jupyter Notebook to run the analysis, or open **HTML_code.html** in any modern web browser to view the static, executed results.
 
 ## Contributors
 
